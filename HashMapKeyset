@@ -1,0 +1,17 @@
+public class Example9 {
+    public static void main(String[] args) {
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        capitalCities.put("USA", "Washington DC");
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+
+
+        for (String i : capitalCities.keySet()) { //The java.util.HashMap.keySet() method in Java is used to create a set out of the
+                                                   key elements contained in the hash map.
+                                                   It basically returns a set view of the keys or we can create a new set and store the key elements in them.
+            System.out.println("key: " + i + " value: " + capitalCities.get(i));
+        }
+    }
+}
